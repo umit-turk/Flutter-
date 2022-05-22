@@ -11,6 +11,7 @@ import 'package:flutter_application_1/101/padding_learn.dart';
 import 'package:flutter_application_1/101/scaffold_learn.dart';
 import 'package:flutter_application_1/101/stateless_learn.dart';
 import 'package:flutter_application_1/101/text_learn_view.dart';
+import 'package:flutter_application_1/demos/note_demos_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         appBarTheme:
             AppBarTheme(centerTitle: true, backgroundColor: Colors.transparent, elevation: 0, systemOverlayStyle: SystemUiOverlayStyle.light, toolbarTextStyle: const TextStyle(color: Colors.red)),
       ),
-      home: ImageLearn(),
+      home: NoteDemos(),
     );
   }
 }
