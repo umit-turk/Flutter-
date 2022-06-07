@@ -12,6 +12,7 @@ import 'package:flutter_application_1/101/image_learn.dart';
 import 'package:flutter_application_1/101/indicator_learn.dart';
 import 'package:flutter_application_1/101/listTile_learn.dart';
 import 'package:flutter_application_1/101/padding_learn.dart';
+import 'package:flutter_application_1/101/page_view_learn.dart';
 import 'package:flutter_application_1/101/scaffold_learn.dart';
 import 'package:flutter_application_1/101/stack_learn.dart';
 import 'package:flutter_application_1/101/statefull_learn.dart';
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
         appBarTheme:
             AppBarTheme(centerTitle: true, backgroundColor: Colors.transparent, elevation: 0, systemOverlayStyle: SystemUiOverlayStyle.light, toolbarTextStyle: const TextStyle(color: Colors.red)),
       ),
-      home: StatefullLearn(),
+      home: PageViewLearn(),
     );
   }
 }
