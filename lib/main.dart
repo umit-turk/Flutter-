@@ -16,7 +16,9 @@ import 'package:flutter_application_1/101/page_view_learn.dart';
 import 'package:flutter_application_1/101/scaffold_learn.dart';
 import 'package:flutter_application_1/101/stack_learn.dart';
 import 'package:flutter_application_1/101/statefull_learn.dart';
+import 'package:flutter_application_1/101/statefull_life_cycle.dart';
 import 'package:flutter_application_1/101/stateless_learn.dart';
+import 'package:flutter_application_1/101/text_field_learn.dart';
 import 'package:flutter_application_1/101/text_learn_view.dart';
 import 'package:flutter_application_1/demos/note_demos_view.dart';
 import 'package:flutter_application_1/demos/stack_demo_view.dart';
@@ -39,10 +41,23 @@ class MyApp extends StatelessWidget {
         listTileTheme: ListTileThemeData(contentPadding: EdgeInsets.zero),
         cardTheme: CardTheme(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
         errorColor: ColorsItems.porchase,
+        inputDecorationTheme: InputDecorationTheme(
+          filled: true,
+          fillColor: Colors.white,
+          iconColor: Colors.red,
+          labelStyle: TextStyle(color: Colors.lime),
+          border: OutlineInputBorder(),
+          floatingLabelStyle: TextStyle(
+            color: Colors.blue,
+            fontSize: 24,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        textTheme: TextTheme(subtitle1: TextStyle(color: Colors.red)),
         appBarTheme:
             AppBarTheme(centerTitle: true, backgroundColor: Colors.transparent, elevation: 0, systemOverlayStyle: SystemUiOverlayStyle.light, toolbarTextStyle: const TextStyle(color: Colors.red)),
       ),
-      home: PageViewLearn(),
+      home: TextFieldLearn(),
     );
   }
 }
