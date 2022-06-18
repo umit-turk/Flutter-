@@ -11,6 +11,9 @@ import 'package:flutter_application_1/101/icon_learn.dart';
 import 'package:flutter_application_1/101/image_learn.dart';
 import 'package:flutter_application_1/101/indicator_learn.dart';
 import 'package:flutter_application_1/101/listTile_learn.dart';
+import 'package:flutter_application_1/101/list_view_builder.dart';
+import 'package:flutter_application_1/101/list_view_learn.dart';
+import 'package:flutter_application_1/101/navigation_learn.dart';
 import 'package:flutter_application_1/101/padding_learn.dart';
 import 'package:flutter_application_1/101/page_view_learn.dart';
 import 'package:flutter_application_1/101/scaffold_learn.dart';
@@ -22,6 +25,7 @@ import 'package:flutter_application_1/101/text_field_learn.dart';
 import 'package:flutter_application_1/101/text_learn_view.dart';
 import 'package:flutter_application_1/demos/color_demos_view.dart';
 import 'package:flutter_application_1/demos/color_life_cycle.dart';
+import 'package:flutter_application_1/demos/my_collections_demos.dart';
 import 'package:flutter_application_1/demos/note_demos_view.dart';
 import 'package:flutter_application_1/demos/stack_demo_view.dart';
 
@@ -59,7 +63,7 @@ class MyApp extends StatelessWidget {
         appBarTheme:
             AppBarTheme(centerTitle: true, backgroundColor: Colors.transparent, elevation: 0, systemOverlayStyle: SystemUiOverlayStyle.light, toolbarTextStyle: const TextStyle(color: Colors.red)),
       ),
-      home: ColorLifeCycleView(),
+      home: NavigationLearn(),
     );
   }
 }
