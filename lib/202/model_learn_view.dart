@@ -15,10 +15,10 @@ class _ModelLearnViewState extends State<ModelLearnView> {
   void initState() {
     super.initState();
 
-    final user1 = PostModel()
+    /* final user1 = PostModel()
       ..userId = 1
       ..body = "üyt";
-    user1.body = "hello";
+    user1.body = "hello"; */
 
     final user2 = PostModel2(1, 2, "a", "b");
     user2.body = "aaa";
