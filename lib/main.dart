@@ -23,6 +23,7 @@ import 'package:flutter_application_1/101/statefull_life_cycle.dart';
 import 'package:flutter_application_1/101/stateless_learn.dart';
 import 'package:flutter_application_1/101/text_field_learn.dart';
 import 'package:flutter_application_1/101/text_learn_view.dart';
+import 'package:flutter_application_1/202/tab_learn.dart';
 import 'package:flutter_application_1/demos/color_demos_view.dart';
 import 'package:flutter_application_1/demos/color_life_cycle.dart';
 import 'package:flutter_application_1/demos/my_collections_demos.dart';
@@ -43,6 +44,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
+        tabBarTheme: TabBarTheme(
+          labelColor: Colors.white,
+          unselectedLabelColor: Colors.red,
+          indicatorSize: TabBarIndicatorSize.label,
+        ),
+        bottomAppBarTheme: BottomAppBarTheme(shape: CircularNotchedRectangle()),
         progressIndicatorTheme: ProgressIndicatorThemeData(color: Colors.red),
         listTileTheme: ListTileThemeData(contentPadding: EdgeInsets.zero),
         cardTheme: CardTheme(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
@@ -63,7 +70,7 @@ class MyApp extends StatelessWidget {
         appBarTheme:
             AppBarTheme(centerTitle: true, backgroundColor: Colors.transparent, elevation: 0, systemOverlayStyle: SystemUiOverlayStyle.light, toolbarTextStyle: const TextStyle(color: Colors.red)),
       ),
-      home: NavigationLearn(),
+      home: TabLearn(),
     );
   }
 }
